@@ -46,7 +46,7 @@ _Model savings are modest because ~0% of tokens are cache reads, where price dif
 | claude-sonnet-4-6 | 30 | 38 | 5K | 415K | $0.20 | $1.12 | $0.83 |
 | **Total** | **28,128** | **34K** | **10.3M** | **3,011.1M** | **$5,291.34** | **$40,645.73** | **$0.83** |
 
-_3,441.0M total tokens processed. 94.5% cache hit rate._
+_3,442.5M total tokens processed. 94.5% cache hit rate._
 
 _$40,646.57 total saved ($40,645.73 caching + $0.83 model routing vs all-Opus)._
 
@@ -73,5 +73,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-21 13:31 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-21 15:31 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
