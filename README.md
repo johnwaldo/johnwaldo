@@ -30,14 +30,14 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-sonnet-4-6 | 11,084 | 11K | 3.3M | 974.7M | $407.48 | $2,631.88 | $1,371.63 |
-| claude-opus-4-6 | 848 | 1K | 266K | 98.8M | $279.86 | $1,334.79 | $0.00 |
+| claude-sonnet-4-6 | 11,222 | 11K | 3.3M | 984.0M | $411.83 | $2,656.87 | $1,384.76 |
+| claude-opus-4-6 | 854 | 1K | 270K | 99.7M | $284.83 | $1,346.69 | $0.00 |
 | big-pickle | 348 | 1.3M | 73K | 15.6M | $11.77 | $0.00 | $49.73 |
-| **Total** | **12,280** | **1.3M** | **3.7M** | **1,089.2M** | **$699.11** | **$3,966.67** | **$1,421.36** |
+| **Total** | **12,424** | **1.3M** | **3.7M** | **1,099.4M** | **$708.43** | **$4,003.56** | **$1,434.49** |
 
-_1,118.0M total tokens processed. 97.4% cache hit rate._
+_1,128.7M total tokens processed. 97.4% cache hit rate._
 
-_$5,388.03 total saved ($3,966.67 caching + $1,421.36 model routing vs all-Opus)._
+_$5,438.05 total saved ($4,003.56 caching + $1,434.49 model routing vs all-Opus)._
 
 _Model savings are modest because ~97.4% of tokens are cache reads, where price differences between models are small._
 
@@ -45,13 +45,13 @@ _Model savings are modest because ~97.4% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 28,946 | 35K | 10.5M | 3,109.5M | $5,459.43 | $41,979.41 | $0.00 |
-| claude-sonnet-4-6 | 11,148 | 11K | 3.3M | 975.1M | $343.10 | $2,633.00 | $1,372.46 |
-| **Total** | **40,094** | **47K** | **13.9M** | **4,084.7M** | **$5,802.53** | **$44,612.40** | **$1,372.46** |
+| claude-opus-4-6 | 28,952 | 35K | 10.5M | 3,110.4M | $5,461.04 | $41,991.30 | $0.00 |
+| claude-sonnet-4-6 | 11,287 | 11K | 3.4M | 984.4M | $346.39 | $2,657.99 | $1,385.59 |
+| **Total** | **40,239** | **47K** | **13.9M** | **4,094.9M** | **$5,807.43** | **$44,649.29** | **$1,385.59** |
 
-_4,569.2M total tokens processed. 95.2% cache hit rate._
+_4,579.9M total tokens processed. 95.2% cache hit rate._
 
-_$45,984.87 total saved ($44,612.40 caching + $1,372.46 model routing vs all-Opus)._
+_$46,034.88 total saved ($44,649.29 caching + $1,385.59 model routing vs all-Opus)._
 
 _Model savings are modest because ~95.2% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -76,5 +76,5 @@ _Model savings are modest because ~95.2% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-25 07:56 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-25 11:57 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
