@@ -16,11 +16,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 4.9h | 48.3h | 67.6h | 67.6h |
-| AI worker hours | 0.1h | 0.6h | 12.0h | 12.0h |
-| AI concurrency hours | 9.2h | 70.1h | 113.7h | 113.7h |
+| User AI session hours | 5.4h | 48.9h | 68.2h | 68.2h |
+| AI worker hours | 0.2h | 0.7h | 12.0h | 12.0h |
+| AI concurrency hours | 9.9h | 71.0h | 114.5h | 114.5h |
 | Interactive sessions | 8 | 51 | 95 | 95 |
-| Worker sessions | 2 | 12 | 144 | 144 |
+| Worker sessions | 4 | 14 | 145 | 145 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -31,16 +31,16 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 14,113 | 17K | 4.6M | 1,646.9M | $4,482.29 | $22,234.20 | $0.00 |
-| claude-sonnet-4-6 | 64,250 | 67K | 18.8M | 5,226.2M | $2,673.36 | $14,110.85 | $7,400.86 |
-| claude-opus-4-7 | 2,122 | 3K | 1.8M | 276.6M | $851.71 | $3,735.16 | $0.00 |
+| claude-sonnet-4-6 | 64,296 | 67K | 18.8M | 5,229.8M | $2,675.21 | $14,120.70 | $7,406.18 |
+| claude-opus-4-7 | 2,197 | 3K | 1.9M | 286.0M | $876.72 | $3,861.73 | $0.00 |
 | claude-opus-4-5 | 808 | 231 | 217K | 60.8M | $194.28 | $822.04 | $0.00 |
 | big-pickle | 538 | 1.9M | 110K | 24.9M | $20.24 | $0.00 | $74.47 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.10 | $0.46 | $1.22 |
-| **Total** | **81,853** | **2.0M** | **25.6M** | **7,236.3M** | **$8,221.98** | **$40,902.71** | **$7,476.56** |
+| **Total** | **81,974** | **2.0M** | **25.7M** | **7,249.3M** | **$8,248.84** | **$41,039.13** | **$7,481.87** |
 
-_7,594.0M total tokens processed. 95.3% cache hit rate._
+_7,607.6M total tokens processed. 95.3% cache hit rate._
 
-_$48,379.27 total saved ($40,902.71 caching + $7,476.56 model routing vs all-Opus)._
+_$48,521.00 total saved ($41,039.13 caching + $7,481.87 model routing vs all-Opus)._
 
 _Model savings are modest because ~95.3% of tokens are cache reads, where price differences between models are small._
 
@@ -49,15 +49,15 @@ _Model savings are modest because ~95.3% of tokens are cache reads, where price 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 42,194 | 52K | 14.9M | 4,655.7M | $8,108.11 | $62,852.85 | $0.00 |
-| claude-sonnet-4-6 | 56,940 | 59K | 16.7M | 4,769.4M | $1,682.31 | $12,877.64 | $6,729.33 |
-| claude-opus-4-7 | 2,122 | 3K | 1.8M | 276.6M | $555.12 | $3,735.16 | $0.00 |
+| claude-sonnet-4-6 | 56,986 | 59K | 16.7M | 4,773.1M | $1,683.65 | $12,887.49 | $6,734.65 |
+| claude-opus-4-7 | 2,198 | 3K | 1.9M | 286.0M | $572.68 | $3,861.73 | $0.00 |
 | claude-opus-4-5 | 814 | 233 | 217K | 60.9M | $107.81 | $823.44 | $0.00 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.06 | $0.46 | $1.22 |
-| **Total** | **102,092** | **115K** | **33.8M** | **9,763.5M** | **$10,453.41** | **$80,289.54** | **$6,730.55** |
+| **Total** | **102,214** | **115K** | **33.8M** | **9,776.5M** | **$10,472.31** | **$80,425.96** | **$6,735.87** |
 
-_10,575.6M total tokens processed. 94.9% cache hit rate._
+_10,589.2M total tokens processed. 94.9% cache hit rate._
 
-_$87,020.10 total saved ($80,289.54 caching + $6,730.55 model routing vs all-Opus)._
+_$87,161.83 total saved ($80,425.96 caching + $6,735.87 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.9% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -82,5 +82,5 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-18 21:49 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-18 22:49 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
