@@ -16,11 +16,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.0h | 33.7h | 79.8h | 79.8h |
-| AI worker hours | 1.6h | 8.9h | 9.6h | 9.6h |
-| AI concurrency hours | 3.0h | 65.9h | 133.7h | 133.7h |
-| Interactive sessions | 9 | 108 | 154 | 154 |
-| Worker sessions | 26 | 92 | 105 | 105 |
+| User AI session hours | 0.0h | 33.0h | 79.1h | 79.1h |
+| AI worker hours | 1.3h | 10.2h | 10.9h | 10.9h |
+| AI concurrency hours | 1.4h | 66.2h | 134.2h | 134.2h |
+| Interactive sessions | 4 | 110 | 154 | 154 |
+| Worker sessions | 5 | 96 | 109 | 109 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -30,34 +30,34 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 8,666 | 10K | 2.9M | 987.2M | $2,634.05 | $13,327.21 | $0.00 |
-| claude-opus-4-7 | 5,801 | 9K | 4.9M | 777.8M | $2,448.69 | $10,501.58 | $0.00 |
-| claude-sonnet-4-6 | 41,684 | 44K | 13.8M | 3,201.3M | $1,842.31 | $8,643.77 | $4,673.51 |
+| claude-opus-4-6 | 8,154 | 10K | 2.7M | 949.9M | $2,547.09 | $12,823.75 | $0.00 |
+| claude-opus-4-7 | 5,806 | 9K | 4.9M | 778.5M | $2,453.32 | $10,510.62 | $0.00 |
+| claude-sonnet-4-6 | 35,597 | 38K | 12.2M | 2,655.6M | $1,393.04 | $7,170.39 | $3,920.12 |
 | claude-opus-4-5 | 808 | 231 | 217K | 60.8M | $194.28 | $822.04 | $0.00 |
 | big-pickle | 19 | 5K | 3K | 450K | $0.33 | $0.00 | $1.04 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.10 | $0.46 | $1.22 |
-| **Total** | **57,000** | **70K** | **21.9M** | **5,028.4M** | **$7,119.76** | **$33,295.06** | **$4,675.77** |
+| **Total** | **50,406** | **63K** | **20.1M** | **4,446.1M** | **$6,588.16** | **$31,327.26** | **$3,922.38** |
 
-_5,333.3M total tokens processed. 94.3% cache hit rate._
+_4,678.7M total tokens processed. 95% cache hit rate._
 
-_$37,970.83 total saved ($33,295.06 caching + $4,675.77 model routing vs all-Opus)._
+_$35,249.64 total saved ($31,327.26 caching + $3,922.38 model routing vs all-Opus)._
 
-_Model savings are modest because ~94.3% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~95% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 42,456 | 52K | 15.1M | 4,681.1M | $8,159.46 | $63,195.08 | $0.00 |
-| claude-sonnet-4-6 | 61,031 | 63K | 19.0M | 5,108.6M | $1,818.33 | $13,793.45 | $7,273.35 |
-| claude-opus-4-7 | 5,801 | 9K | 4.9M | 777.8M | $1,536.38 | $10,501.58 | $0.00 |
+| claude-opus-4-6 | 42,468 | 52K | 15.1M | 4,681.8M | $8,160.98 | $63,205.53 | $0.00 |
+| claude-sonnet-4-6 | 61,105 | 63K | 19.0M | 5,113.9M | $1,820.58 | $13,807.56 | $7,282.35 |
+| claude-opus-4-7 | 5,806 | 9K | 4.9M | 778.5M | $1,537.78 | $10,510.62 | $0.00 |
 | claude-opus-4-5 | 814 | 233 | 217K | 60.9M | $107.81 | $823.44 | $0.00 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.06 | $0.46 | $1.22 |
-| **Total** | **110,124** | **126K** | **39.3M** | **10,629.3M** | **$11,622.04** | **$88,314.01** | **$7,274.57** |
+| **Total** | **110,215** | **126K** | **39.3M** | **10,636.0M** | **$11,627.21** | **$88,347.61** | **$7,283.57** |
 
-_11,495.3M total tokens processed. 94.9% cache hit rate._
+_11,502.6M total tokens processed. 94.9% cache hit rate._
 
-_$95,588.58 total saved ($88,314.01 caching + $7,274.57 model routing vs all-Opus)._
+_$95,631.18 total saved ($88,347.61 caching + $7,283.57 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.9% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -82,5 +82,5 @@ _Model savings are modest because ~94.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-26 19:06 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-27 12:53 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
