@@ -18,7 +18,7 @@
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 1.6h | 21.9h | 51.3h | 51.3h |
 | AI worker hours | 1.4h | 6.5h | 17.8h | 17.8h |
-| AI concurrency hours | 3.4h | 43.0h | 103.9h | 103.9h |
+| AI concurrency hours | 3.4h | 42.6h | 103.9h | 103.9h |
 | Interactive sessions | 7 | 44 | 138 | 138 |
 | Worker sessions | 9 | 54 | 159 | 159 |
 
@@ -32,15 +32,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 8,864 | 15K | 7.5M | 1,204.1M | $3,896.60 | $16,255.57 | $0.00 |
 | claude-opus-4-6 | 4,632 | 6K | 1.7M | 639.0M | $1,681.14 | $8,626.66 | $0.00 |
-| claude-sonnet-4-6 | 23,023 | 24K | 9.7M | 1,833.6M | $965.18 | $4,950.86 | $2,783.31 |
+| claude-sonnet-4-6 | 22,984 | 24K | 9.7M | 1,832.2M | $964.18 | $4,947.04 | $2,781.09 |
 | gpt-5.5 | 311 | 1.4M | 49K | 15.4M | $8.62 | $41.81 | $39.05 |
 | minimax-m2.5-free | 81 | 341K | 47K | 5.2M | $3.33 | $0.00 | $16.66 |
 | big-pickle | 55 | 31K | 19K | 2.9M | $2.04 | $0.00 | $6.40 |
-| **Total** | **36,966** | **1.8M** | **19.1M** | **3,700.5M** | **$6,556.91** | **$29,874.91** | **$2,845.42** |
+| **Total** | **36,927** | **1.8M** | **19.1M** | **3,699.1M** | **$6,555.91** | **$29,871.08** | **$2,843.20** |
 
-_3,906.3M total tokens processed. 94.7% cache hit rate._
+_3,904.7M total tokens processed. 94.7% cache hit rate._
 
-_$32,720.33 total saved ($29,874.91 caching + $2,845.42 model routing vs all-Opus)._
+_$32,714.29 total saved ($29,871.08 caching + $2,843.20 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.7% of tokens are cache reads, where price differences between models are small._
 
@@ -83,5 +83,5 @@ _Model savings are modest because ~94.8% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-04 22:16 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-04 23:21 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
