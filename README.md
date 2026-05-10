@@ -16,9 +16,9 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.4h | 11.3h | 33.1h | 33.1h |
+| User AI session hours | 0.0h | 11.3h | 33.1h | 33.1h |
 | AI worker hours | 1.0h | 34.1h | 42.0h | 42.0h |
-| AI concurrency hours | 1.6h | 52.1h | 95.8h | 95.8h |
+| AI concurrency hours | 1.0h | 52.1h | 95.8h | 95.8h |
 | Interactive sessions | 1 | 26 | 64 | 64 |
 | Worker sessions | 19 | 327 | 388 | 388 |
 
@@ -31,16 +31,16 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 9,028 | 15K | 7.7M | 1,224.4M | $3,977.42 | $16,529.43 | $0.00 |
-| claude-sonnet-4-6 | 18,110 | 19K | 8.4M | 1,576.5M | $835.43 | $4,256.79 | $2,398.20 |
+| claude-sonnet-4-6 | 17,682 | 19K | 8.2M | 1,547.7M | $822.19 | $4,178.92 | $2,355.15 |
 | claude-opus-4-6 | 2,107 | 2K | 936K | 247.6M | $760.17 | $3,343.76 | $0.00 |
 | gpt-5.5 | 9,005 | 42.2M | 1.6M | 536.3M | $275.29 | $1,448.06 | $1,248.93 |
 | minimax-m2.5-free | 97 | 470K | 51K | 5.7M | $3.90 | $0.00 | $19.52 |
 | big-pickle | 55 | 31K | 19K | 2.9M | $2.04 | $0.00 | $6.40 |
-| **Total** | **38,402** | **42.8M** | **18.8M** | **3,593.6M** | **$5,854.25** | **$25,578.04** | **$3,673.05** |
+| **Total** | **37,974** | **42.8M** | **18.6M** | **3,564.8M** | **$5,841.01** | **$25,500.17** | **$3,630.00** |
 
-_3,818.4M total tokens processed. 94.1% cache hit rate._
+_3,788.9M total tokens processed. 94.1% cache hit rate._
 
-_$29,251.09 total saved ($25,578.04 caching + $3,673.05 model routing vs all-Opus)._
+_$29,130.17 total saved ($25,500.17 caching + $3,630.00 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.1% of tokens are cache reads, where price differences between models are small._
 
@@ -83,5 +83,5 @@ _Model savings are modest because ~94.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-10 14:31 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-10 15:00 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
