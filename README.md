@@ -18,9 +18,9 @@
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 11.3h | 33.1h | 33.1h |
 | AI worker hours | 1.2h | 35.2h | 42.1h | 42.1h |
-| AI concurrency hours | 1.2h | 53.1h | 95.9h | 95.9h |
+| AI concurrency hours | 1.2h | 53.2h | 95.9h | 95.9h |
 | Interactive sessions | 0 | 26 | 64 | 64 |
-| Worker sessions | 23 | 346 | 406 | 406 |
+| Worker sessions | 23 | 347 | 407 | 407 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,17 +32,17 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 9,028 | 15K | 7.7M | 1,224.4M | $3,977.42 | $16,529.43 | $0.00 |
 | claude-opus-4-6 | 1,731 | 2K | 833K | 191.6M | $623.76 | $2,587.07 | $0.00 |
-| claude-sonnet-4-6 | 12,086 | 13K | 6.4M | 1,116.5M | $620.17 | $3,014.65 | $1,726.83 |
-| gpt-5.5 | 9,205 | 43.1M | 1.6M | 541.8M | $279.56 | $1,463.06 | $1,268.03 |
+| claude-sonnet-4-6 | 11,902 | 12K | 6.4M | 1,107.0M | $615.88 | $2,988.97 | $1,713.02 |
+| gpt-5.5 | 9,214 | 43.2M | 1.6M | 542.1M | $279.75 | $1,463.75 | $1,268.86 |
 | minimax-m2.5-free | 97 | 470K | 51K | 5.7M | $3.90 | $0.00 | $19.52 |
 | big-pickle | 55 | 31K | 19K | 2.9M | $2.04 | $0.00 | $6.40 |
-| **Total** | **32,202** | **43.7M** | **16.7M** | **3,083.1M** | **$5,506.85** | **$23,594.21** | **$3,020.78** |
+| **Total** | **32,027** | **43.7M** | **16.7M** | **3,073.8M** | **$5,502.75** | **$23,569.22** | **$3,007.80** |
 
-_3,291.7M total tokens processed. 93.7% cache hit rate._
+_3,282.3M total tokens processed. 93.6% cache hit rate._
 
-_$26,615.00 total saved ($23,594.21 caching + $3,020.78 model routing vs all-Opus)._
+_$26,577.02 total saved ($23,569.22 caching + $3,007.80 model routing vs all-Opus)._
 
-_Model savings are modest because ~93.7% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~93.6% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -51,14 +51,14 @@ _Model savings are modest because ~93.7% of tokens are cache reads, where price 
 | claude-opus-4-6 | 42,527 | 52K | 15.1M | 4,685.3M | $8,168.13 | $63,252.62 | $0.00 |
 | claude-opus-4-7 | 9,028 | 15K | 7.7M | 1,224.4M | $2,417.57 | $16,529.43 | $0.00 |
 | claude-sonnet-4-6 | 62,857 | 65K | 20.0M | 5,257.1M | $1,877.84 | $14,194.23 | $7,511.42 |
-| gpt-5.5 | 9,328 | 42.9M | 1.6M | 545.1M | $317.47 | $1,471.97 | $1,269.90 |
+| gpt-5.5 | 9,338 | 42.9M | 1.6M | 545.4M | $317.67 | $1,472.75 | $1,270.79 |
 | claude-opus-4-5 | 814 | 233 | 217K | 60.9M | $107.81 | $823.44 | $0.00 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.06 | $0.46 | $1.22 |
-| **Total** | **124,576** | **43.0M** | **44.8M** | **11,773.7M** | **$12,888.88** | **$96,272.15** | **$8,782.55** |
+| **Total** | **124,586** | **43.1M** | **44.8M** | **11,774.0M** | **$12,889.08** | **$96,272.93** | **$8,783.43** |
 
-_12,737.5M total tokens processed. 94.7% cache hit rate._
+_12,737.8M total tokens processed. 94.7% cache hit rate._
 
-_$105,054.69 total saved ($96,272.15 caching + $8,782.55 model routing vs all-Opus)._
+_$105,056.36 total saved ($96,272.93 caching + $8,783.43 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.7% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -83,5 +83,5 @@ _Model savings are modest because ~94.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-11 10:41 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-11 11:42 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
