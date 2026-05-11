@@ -20,7 +20,7 @@
 | AI worker hours | 1.2h | 35.2h | 42.1h | 42.1h |
 | AI concurrency hours | 1.2h | 53.2h | 95.9h | 95.9h |
 | Interactive sessions | 0 | 26 | 64 | 64 |
-| Worker sessions | 23 | 347 | 407 | 407 |
+| Worker sessions | 22 | 347 | 407 | 407 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,15 +32,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 9,028 | 15K | 7.7M | 1,224.4M | $3,977.42 | $16,529.43 | $0.00 |
 | claude-opus-4-6 | 1,731 | 2K | 833K | 191.6M | $623.76 | $2,587.07 | $0.00 |
-| claude-sonnet-4-6 | 11,902 | 12K | 6.4M | 1,107.0M | $615.88 | $2,988.97 | $1,713.02 |
+| claude-sonnet-4-6 | 11,844 | 12K | 6.3M | 1,104.1M | $614.55 | $2,981.10 | $1,708.78 |
 | gpt-5.5 | 9,214 | 43.2M | 1.6M | 542.1M | $279.75 | $1,463.75 | $1,268.86 |
 | minimax-m2.5-free | 97 | 470K | 51K | 5.7M | $3.90 | $0.00 | $19.52 |
 | big-pickle | 55 | 31K | 19K | 2.9M | $2.04 | $0.00 | $6.40 |
-| **Total** | **32,027** | **43.7M** | **16.7M** | **3,073.8M** | **$5,502.75** | **$23,569.22** | **$3,007.80** |
+| **Total** | **31,969** | **43.7M** | **16.7M** | **3,070.9M** | **$5,501.42** | **$23,561.34** | **$3,003.56** |
 
-_3,282.3M total tokens processed. 93.6% cache hit rate._
+_3,279.3M total tokens processed. 93.6% cache hit rate._
 
-_$26,577.02 total saved ($23,569.22 caching + $3,007.80 model routing vs all-Opus)._
+_$26,564.90 total saved ($23,561.34 caching + $3,003.56 model routing vs all-Opus)._
 
 _Model savings are modest because ~93.6% of tokens are cache reads, where price differences between models are small._
 
@@ -83,5 +83,5 @@ _Model savings are modest because ~94.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-11 11:42 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-11 12:01 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
