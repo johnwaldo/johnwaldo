@@ -30,17 +30,17 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 4,406 | 7K | 3.9M | 605.6M | $2,088.13 | $8,176.35 | $0.00 |
+| claude-opus-4-7 | 4,375 | 7K | 3.9M | 599.9M | $2,072.31 | $8,099.41 | $0.00 |
 | gpt-5.5 | 13,823 | 62.5M | 2.5M | 775.6M | $406.41 | $2,094.23 | $1,837.16 |
 | claude-sonnet-4-6 | 6,198 | 6K | 3.2M | 516.6M | $273.54 | $1,395.02 | $812.58 |
 | claude-opus-4-6 | 241 | 254 | 110K | 21.9M | $65.13 | $295.65 | $0.00 |
 | minimax-m2.5-free | 120 | 509K | 55K | 6.2M | $4.24 | $0.00 | $21.20 |
 | big-pickle | 57 | 51K | 19K | 2.9M | $2.11 | $0.00 | $6.70 |
-| **Total** | **24,845** | **63.1M** | **9.9M** | **1,929.1M** | **$2,839.56** | **$11,961.25** | **$2,677.64** |
+| **Total** | **24,814** | **63.1M** | **9.8M** | **1,923.4M** | **$2,823.74** | **$11,884.31** | **$2,677.64** |
 
-_2,069.6M total tokens processed. 93.2% cache hit rate._
+_2,063.6M total tokens processed. 93.2% cache hit rate._
 
-_$14,638.89 total saved ($11,961.25 caching + $2,677.64 model routing vs all-Opus)._
+_$14,561.95 total saved ($11,884.31 caching + $2,677.64 model routing vs all-Opus)._
 
 _Model savings are modest because ~93.2% of tokens are cache reads, where price differences between models are small._
 
@@ -85,5 +85,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-23 12:42 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-23 13:00 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
