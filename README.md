@@ -16,11 +16,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.1h | 0.9h | 16.3h | 16.3h |
-| AI worker hours | 1.6h | 6.1h | 16.1h | 16.1h |
-| AI concurrency hours | 1.7h | 7.4h | 39.5h | 39.5h |
-| Interactive sessions | 1 | 5 | 15 | 15 |
-| Worker sessions | 19 | 68 | 220 | 220 |
+| User AI session hours | 0.1h | 0.5h | 16.3h | 16.3h |
+| AI worker hours | 1.5h | 6.1h | 16.0h | 16.0h |
+| AI concurrency hours | 1.6h | 7.0h | 39.5h | 39.5h |
+| Interactive sessions | 1 | 2 | 15 | 15 |
+| Worker sessions | 18 | 68 | 219 | 219 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -30,15 +30,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 17,265 | 76.4M | 3.2M | 947.0M | $497.44 | $2,556.94 | $2,247.91 |
+| gpt-5.5 | 17,273 | 76.4M | 3.2M | 947.1M | $497.59 | $2,557.40 | $2,248.56 |
 | claude-opus-4-7 | 164 | 295 | 145K | 20.2M | $80.82 | $273.86 | $0.00 |
 | minimax-m2.5-free | 39 | 168K | 7K | 975K | $0.91 | $0.00 | $4.54 |
 | big-pickle | 2 | 19K | 60 | 0 | $0.06 | $0.00 | $0.30 |
-| **Total** | **17,470** | **76.6M** | **3.3M** | **968.2M** | **$579.23** | **$2,830.80** | **$2,252.75** |
+| **Total** | **17,478** | **76.6M** | **3.3M** | **968.4M** | **$579.38** | **$2,831.27** | **$2,253.40** |
 
-_1,050.3M total tokens processed. 92.2% cache hit rate._
+_1,050.5M total tokens processed. 92.2% cache hit rate._
 
-_$5,083.55 total saved ($2,830.80 caching + $2,252.75 model routing vs all-Opus)._
+_$5,084.67 total saved ($2,831.27 caching + $2,253.40 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.2% of tokens are cache reads, where price differences between models are small._
 
@@ -81,5 +81,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-06-03 22:00 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-06-03 22:45 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
