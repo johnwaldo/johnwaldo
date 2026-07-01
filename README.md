@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 1.3h | 2.5h | 418.6h |
-| AI worker hours | 0.0h | 12.6h | 4.9h | 278.8h |
-| AI concurrency hours | 0.0h | 14.2h | 33.5h | 970.1h |
+| AI worker hours | 0.0h | 12.5h | 4.9h | 278.8h |
+| AI concurrency hours | 0.0h | 14.0h | 33.5h | 970.1h |
 | Interactive sessions | 0 | 2 | 7 | 762 |
-| Worker sessions | 19 | 253 | 45 | 2,307 |
+| Worker sessions | 18 | 251 | 45 | 2,307 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,14 +32,14 @@ _AI session 365-day totals cover 127 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 5,412 | 17.6M | 772K | 150.0M | $98.07 | $405.25 | $438.49 |
-| **Total** | **5,412** | **17.6M** | **772K** | **150.0M** | **$98.07** | **$405.25** | **$438.49** |
+| gpt-5.5 | 5,393 | 17.6M | 770K | 149.5M | $97.76 | $403.71 | $437.09 |
+| **Total** | **5,393** | **17.6M** | **770K** | **149.5M** | **$97.76** | **$403.71** | **$437.09** |
 
-_168.5M total tokens processed. 89.1% cache hit rate._
+_167.9M total tokens processed. 89% cache hit rate._
 
-_$843.74 total saved ($405.25 caching + $438.49 model routing vs all-Opus)._
+_$840.81 total saved ($403.71 caching + $437.09 model routing vs all-Opus)._
 
-_Model savings are modest because ~89.1% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~89% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -80,5 +80,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-01 15:17 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-01 16:33 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
