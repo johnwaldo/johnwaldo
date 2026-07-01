@@ -18,9 +18,9 @@
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 1.3h | 2.5h | 418.6h |
 | AI worker hours | 0.0h | 14.1h | 5.7h | 278.8h |
-| AI concurrency hours | 0.0h | 15.7h | 34.3h | 970.1h |
+| AI concurrency hours | 0.0h | 15.6h | 34.3h | 970.1h |
 | Interactive sessions | 0 | 2 | 7 | 762 |
-| Worker sessions | 21 | 265 | 55 | 2,307 |
+| Worker sessions | 20 | 263 | 54 | 2,307 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -80,5 +80,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-01 04:41 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-01 06:03 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
