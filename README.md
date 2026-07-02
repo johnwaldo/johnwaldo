@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 1.3h | 2.4h | 418.6h |
-| AI worker hours | 0.0h | 11.0h | 4.5h | 278.8h |
+| AI worker hours | 0.0h | 10.9h | 4.4h | 278.8h |
 | AI concurrency hours | 0.0h | 12.5h | 33.0h | 970.1h |
 | Interactive sessions | 0 | 2 | 6 | 762 |
-| Worker sessions | 17 | 237 | 38 | 2,307 |
+| Worker sessions | 17 | 237 | 37 | 2,307 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,14 +32,14 @@ _AI session 365-day totals cover 127 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 5,085 | 16.8M | 712K | 138.0M | $91.55 | $372.61 | $410.01 |
-| **Total** | **5,085** | **16.8M** | **712K** | **138.0M** | **$91.55** | **$372.61** | **$410.01** |
+| gpt-5.5 | 5,038 | 16.6M | 704K | 136.6M | $90.53 | $368.94 | $405.47 |
+| **Total** | **5,038** | **16.6M** | **704K** | **136.6M** | **$90.53** | **$368.94** | **$405.47** |
 
-_155.5M total tokens processed. 88.7% cache hit rate._
+_153.9M total tokens processed. 88.8% cache hit rate._
 
-_$782.62 total saved ($372.61 caching + $410.01 model routing vs all-Opus)._
+_$774.41 total saved ($368.94 caching + $405.47 model routing vs all-Opus)._
 
-_Model savings are modest because ~88.7% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~88.8% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -80,5 +80,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-02 03:31 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-02 04:32 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
