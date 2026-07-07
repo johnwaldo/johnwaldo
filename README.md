@@ -16,11 +16,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.4h | 1.5h | 3.1h | 420.1h |
-| AI worker hours | 1.4h | 1.5h | 22.2h | 278.8h |
-| AI concurrency hours | 2.1h | 3.3h | 26.6h | 972.0h |
-| Interactive sessions | 4 | 5 | 9 | 766 |
-| Worker sessions | 35 | 156 | 5 | 2,307 |
+| User AI session hours | 0.2h | 1.5h | 3.1h | 420.1h |
+| AI worker hours | 1.3h | 1.5h | 22.2h | 278.8h |
+| AI concurrency hours | 1.6h | 3.3h | 26.6h | 972.0h |
+| Interactive sessions | 2 | 5 | 9 | 766 |
+| Worker sessions | 34 | 157 | 5 | 2,307 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,13 +32,13 @@ _AI session 365-day totals cover 138 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 4,308 | 13.4M | 572K | 114.3M | $74.53 | $308.63 | $333.49 |
+| gpt-5.5 | 4,313 | 13.5M | 573K | 114.3M | $74.63 | $308.76 | $333.96 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **4,332** | **13.6M** | **577K** | **114.7M** | **$75.11** | **$308.63** | **$336.26** |
+| **Total** | **4,337** | **13.6M** | **577K** | **114.8M** | **$75.21** | **$308.76** | **$336.72** |
 
-_128.9M total tokens processed. 89% cache hit rate._
+_129.0M total tokens processed. 89% cache hit rate._
 
-_$644.88 total saved ($308.63 caching + $336.26 model routing vs all-Opus)._
+_$645.48 total saved ($308.76 caching + $336.72 model routing vs all-Opus)._
 
 _Model savings are modest because ~89% of tokens are cache reads, where price differences between models are small._
 
@@ -81,5 +81,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-07 17:55 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-07 18:56 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
