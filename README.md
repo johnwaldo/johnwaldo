@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 1.5h | 3.1h | 420.1h |
-| AI worker hours | 1.2h | 4.5h | 25.2h | 278.8h |
-| AI concurrency hours | 1.2h | 6.3h | 29.6h | 972.0h |
-| Interactive sessions | 1 | 5 | 9 | 766 |
-| Worker sessions | 29 | 190 | 5 | 2,307 |
+| AI worker hours | 0.7h | 4.6h | 25.3h | 278.8h |
+| AI concurrency hours | 0.7h | 6.4h | 29.7h | 972.0h |
+| Interactive sessions | 0 | 5 | 9 | 766 |
+| Worker sessions | 16 | 185 | 5 | 2,307 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,13 +32,13 @@ _AI session 365-day totals cover 139 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 5,004 | 15.4M | 676K | 133.5M | $86.27 | $360.48 | $385.84 |
+| gpt-5.5 | 5,015 | 15.4M | 678K | 133.6M | $86.43 | $360.98 | $386.57 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **5,028** | **15.5M** | **681K** | **133.9M** | **$86.85** | **$360.48** | **$388.60** |
+| **Total** | **5,039** | **15.5M** | **683K** | **134.1M** | **$87.01** | **$360.98** | **$389.33** |
 
-_150.1M total tokens processed. 89.2% cache hit rate._
+_150.4M total tokens processed. 89.2% cache hit rate._
 
-_$749.08 total saved ($360.48 caching + $388.60 model routing vs all-Opus)._
+_$750.31 total saved ($360.98 caching + $389.33 model routing vs all-Opus)._
 
 _Model savings are modest because ~89.2% of tokens are cache reads, where price differences between models are small._
 
@@ -81,5 +81,5 @@ _Model savings are modest because ~94.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-09 12:43 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-09 20:32 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
