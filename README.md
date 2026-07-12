@@ -19,10 +19,10 @@
 | Interactive human attention | 0.0h | 0.9h | 2.5h | 299.0h |
 | Interactive AI generation | 0.0h | 0.4h | 1.2h | 272.1h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 8.3h |
-| Worker/headless AI generation | 1.3h | 6.8h | 25.2h | 318.7h |
-| Additive observed work | 1.3h | 8.1h | 28.8h | 896.4h |
+| Worker/headless AI generation | 1.1h | 6.8h | 25.2h | 318.7h |
+| Additive observed work | 1.1h | 8.1h | 28.8h | 896.4h |
 | Interactive sessions | 0 | 6 | 10 | 914 |
-| Worker sessions | 38 | 197 | 625 | 3,703 |
+| Worker sessions | 35 | 196 | 625 | 3,703 |
 
 _Screen time from macos-knowledge-db; collection status: unavailable._
 
@@ -87,5 +87,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-12 00:14 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-12 01:15 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
