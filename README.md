@@ -15,14 +15,14 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 0.1h | 16.1h | 16.1h | /Users/justin1152h* |
+| Screen time (Mac) | 0h | 16.1h | 16.1h | /Users/justin1152h* |
 | Interactive human attention | 0.0h | 0.9h | 2.5h | 299.0h |
 | Interactive AI generation | 0.0h | 0.4h | 1.2h | 272.1h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 8.3h |
-| Worker/headless AI generation | 1.5h | 6.1h | 24.4h | 318.0h |
-| Additive observed work | 1.5h | 7.3h | 28.1h | 895.7h |
+| Worker/headless AI generation | 0.8h | 6.9h | 25.2h | 318.8h |
+| Additive observed work | 0.8h | 8.2h | 28.9h | 896.5h |
 | Interactive sessions | 0 | 6 | 10 | 914 |
-| Worker sessions | 63 | 217 | 628 | 3,706 |
+| Worker sessions | 29 | 197 | 629 | 3,707 |
 
 _Screen time from macos-pmset-display-assertions; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -30,20 +30,20 @@ _Periods are completed local calendar days ending at midnight; today is excluded
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 142 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 143 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.5 | 5,005 | 15.4M | 676K | 133.5M | $86.23 | $360.47 | $385.69 |
-| gpt-5.6-sol | 527 | 1.7M | 72K | 12.5M | $18.20 | $33.81 | $40.84 |
+| gpt-5.6-sol | 534 | 1.8M | 73K | 12.6M | $18.48 | $34.21 | $41.47 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **5,556** | **17.3M** | **754K** | **146.5M** | **$105.01** | **$394.28** | **$429.29** |
+| **Total** | **5,563** | **17.3M** | **755K** | **146.6M** | **$105.29** | **$394.68** | **$429.92** |
 
-_164.5M total tokens processed. 89% cache hit rate._
+_164.7M total tokens processed. 89% cache hit rate._
 
-_$823.56 total saved ($394.28 caching + $429.29 model routing vs all-Opus)._
+_$824.60 total saved ($394.68 caching + $429.92 model routing vs all-Opus)._
 
 _Model savings are modest because ~89% of tokens are cache reads, where price differences between models are small._
 
@@ -57,14 +57,14 @@ _Model savings are modest because ~89% of tokens are cache reads, where price di
 | gpt-5.5 | 23,201 | 95.5M | 4.0M | 1,113.6M | $604.62 | $3,006.80 | $2,727.50 |
 | claude-opus-4-5 | 808 | 231 | 217K | 60.8M | $194.28 | $822.04 | $0.00 |
 | big-pickle | 619 | 2.0M | 135K | 28.3M | $22.93 | $0.00 | $83.93 |
-| gpt-5.6-sol | 527 | 1.7M | 72K | 12.5M | $18.20 | $33.81 | $40.84 |
+| gpt-5.6-sol | 534 | 1.8M | 73K | 12.6M | $18.48 | $34.21 | $41.47 |
 | minimax-m2.5-free | 120 | 509K | 55K | 6.2M | $4.24 | $0.00 | $21.20 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.10 | $0.46 | $1.22 |
-| **Total** | **122,008** | **100.0M** | **40.9M** | **10,103.3M** | **$12,510.17** | **$59,255.98** | **$11,468.39** |
+| **Total** | **122,015** | **100.1M** | **40.9M** | **10,103.5M** | **$12,510.45** | **$59,256.38** | **$11,469.03** |
 
-_10,675.4M total tokens processed. 94.6% cache hit rate._
+_10,675.6M total tokens processed. 94.6% cache hit rate._
 
-_$70,724.38 total saved ($59,255.98 caching + $11,468.39 model routing vs all-Opus)._
+_$70,725.41 total saved ($59,256.38 caching + $11,469.03 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -89,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-12 05:18 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-12 06:19 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
