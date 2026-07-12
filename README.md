@@ -13,35 +13,37 @@
 <!-- STATS-START -->
 ## Work with AI
 
-| Metric | 24h | 7 Days | 28 Days | 365 Days |
+| Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | unavailable | unavailable | unavailable |
+| Screen time (Mac) | 0.1h | 16.1h | 16.1h | /Users/justin1152h* |
 | Interactive human attention | 0.0h | 0.9h | 2.5h | 299.0h |
 | Interactive AI generation | 0.0h | 0.4h | 1.2h | 272.1h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 8.3h |
-| Worker/headless AI generation | 1.0h | 6.8h | 25.2h | 318.7h |
-| Additive observed work | 1.0h | 8.1h | 28.8h | 896.4h |
+| Worker/headless AI generation | 1.5h | 6.1h | 24.4h | 318.0h |
+| Additive observed work | 1.5h | 7.3h | 28.1h | 895.7h |
 | Interactive sessions | 0 | 6 | 10 | 914 |
-| Worker sessions | 33 | 195 | 625 | 3,703 |
+| Worker sessions | 62 | 216 | 627 | 3,705 |
 
-_Screen time from macos-knowledge-db; collection status: unavailable._
+_Screen time from macos-pmset-display-assertions; collection status: ok. *365-day estimate uses observed calendar coverage._
+
+_Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 143 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 142 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 5,006 | 15.4M | 676K | 133.5M | $86.24 | $360.54 | $385.73 |
-| gpt-5.6-sol | 506 | 1.6M | 69K | 12.1M | $17.41 | $32.68 | $39.07 |
+| gpt-5.5 | 5,005 | 15.4M | 676K | 133.5M | $86.23 | $360.47 | $385.69 |
+| gpt-5.6-sol | 522 | 1.7M | 71K | 12.4M | $17.97 | $33.56 | $40.31 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **5,536** | **17.2M** | **751K** | **146.1M** | **$104.23** | **$393.22** | **$427.56** |
+| **Total** | **5,551** | **17.2M** | **753K** | **146.4M** | **$104.78** | **$394.03** | **$428.76** |
 
-_164.0M total tokens processed. 89% cache hit rate._
+_164.4M total tokens processed. 89% cache hit rate._
 
-_$820.78 total saved ($393.22 caching + $427.56 model routing vs all-Opus)._
+_$822.79 total saved ($394.03 caching + $428.76 model routing vs all-Opus)._
 
 _Model savings are modest because ~89% of tokens are cache reads, where price differences between models are small._
 
@@ -55,14 +57,14 @@ _Model savings are modest because ~89% of tokens are cache reads, where price di
 | gpt-5.5 | 23,201 | 95.5M | 4.0M | 1,113.6M | $604.62 | $3,006.80 | $2,727.50 |
 | claude-opus-4-5 | 808 | 231 | 217K | 60.8M | $194.28 | $822.04 | $0.00 |
 | big-pickle | 619 | 2.0M | 135K | 28.3M | $22.93 | $0.00 | $83.93 |
-| gpt-5.6-sol | 506 | 1.6M | 69K | 12.1M | $17.41 | $32.68 | $39.07 |
+| gpt-5.6-sol | 522 | 1.7M | 71K | 12.4M | $17.97 | $33.56 | $40.31 |
 | minimax-m2.5-free | 120 | 509K | 55K | 6.2M | $4.24 | $0.00 | $21.20 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.10 | $0.46 | $1.22 |
-| **Total** | **121,987** | **99.9M** | **40.9M** | **10,102.9M** | **$12,509.38** | **$59,254.85** | **$11,466.62** |
+| **Total** | **122,003** | **100.0M** | **40.9M** | **10,103.2M** | **$12,509.94** | **$59,255.73** | **$11,467.87** |
 
-_10,674.9M total tokens processed. 94.6% cache hit rate._
+_10,675.3M total tokens processed. 94.6% cache hit rate._
 
-_$70,721.48 total saved ($59,254.85 caching + $11,466.62 model routing vs all-Opus)._
+_$70,723.60 total saved ($59,255.73 caching + $11,467.87 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -87,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-12 02:15 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-12 04:17 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
