@@ -15,14 +15,14 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 1.7h | 4.1h | 20.1h | /Users/justin734h* |
+| Screen time (Mac) | 2.5h | 6.5h | 22.6h | /Users/justin750h* |
 | Interactive human attention | 0.0h | 0.0h | 2.5h | 299.0h |
 | Interactive AI generation | 0.0h | 0.0h | 1.2h | 272.1h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 8.3h |
-| Worker/headless AI generation | 2.1h | 14.2h | 36.8h | 330.4h |
-| Additive observed work | 2.1h | 14.2h | 40.5h | 908.2h |
+| Worker/headless AI generation | 1.0h | 15.0h | 37.8h | 331.5h |
+| Additive observed work | 1.0h | 15.0h | 41.5h | 909.2h |
 | Interactive sessions | 0 | 0 | 10 | 914 |
-| Worker sessions | 31 | 219 | 778 | 3,858 |
+| Worker sessions | 14 | 217 | 776 | 3,860 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -30,20 +30,20 @@ _Periods are completed local calendar days ending at midnight; today is excluded
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 147 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 148 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-sol | 3,365 | 11.2M | 535K | 131.7M | $146.51 | $355.78 | $325.75 |
+| gpt-5.6-sol | 3,404 | 11.3M | 539K | 132.8M | $147.83 | $358.78 | $328.61 |
 | gpt-5.5 | 4,934 | 15.1M | 665K | 132.1M | $85.01 | $356.75 | $380.49 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **8,323** | **26.5M** | **1.2M** | **264.3M** | **$232.10** | **$712.53** | **$709.00** |
+| **Total** | **8,362** | **26.6M** | **1.2M** | **265.4M** | **$233.42** | **$715.54** | **$711.86** |
 
-_292.1M total tokens processed. 90.5% cache hit rate._
+_293.3M total tokens processed. 90.5% cache hit rate._
 
-_$1,421.54 total saved ($712.53 caching + $709.00 model routing vs all-Opus)._
+_$1,427.40 total saved ($715.54 caching + $711.86 model routing vs all-Opus)._
 
 _Model savings are modest because ~90.5% of tokens are cache reads, where price differences between models are small._
 
@@ -56,15 +56,15 @@ _Model savings are modest because ~90.5% of tokens are cache reads, where price 
 | claude-sonnet-4-6 | 73,152 | 76K | 23.7M | 5,972.3M | $3,088.59 | $16,125.37 | $8,593.70 |
 | gpt-5.5 | 23,201 | 95.5M | 4.0M | 1,113.6M | $604.62 | $3,006.80 | $2,727.50 |
 | claude-opus-4-5 | 808 | 231 | 217K | 60.8M | $194.28 | $822.04 | $0.00 |
-| gpt-5.6-sol | 3,365 | 11.2M | 535K | 131.7M | $146.51 | $355.78 | $325.75 |
+| gpt-5.6-sol | 3,404 | 11.3M | 539K | 132.8M | $147.83 | $358.78 | $328.61 |
 | big-pickle | 619 | 2.0M | 135K | 28.3M | $22.93 | $0.00 | $83.93 |
 | minimax-m2.5-free | 120 | 509K | 55K | 6.2M | $4.24 | $0.00 | $21.20 |
 | claude-haiku-4-5 | 22 | 107 | 4K | 639K | $0.10 | $0.46 | $1.22 |
-| **Total** | **124,846** | **109.5M** | **41.4M** | **10,222.6M** | **$12,638.48** | **$59,577.95** | **$11,753.31** |
+| **Total** | **124,885** | **109.6M** | **41.4M** | **10,223.7M** | **$12,639.80** | **$59,580.96** | **$11,756.16** |
 
-_10,804.6M total tokens processed. 94.6% cache hit rate._
+_10,805.9M total tokens processed. 94.6% cache hit rate._
 
-_$71,331.26 total saved ($59,577.95 caching + $11,753.31 model routing vs all-Opus)._
+_$71,337.12 total saved ($59,580.96 caching + $11,756.16 model routing vs all-Opus)._
 
 _Model savings are modest because ~94.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -89,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-17 05:40 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-17 13:41 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
