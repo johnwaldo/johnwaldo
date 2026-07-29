@@ -15,14 +15,14 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 0.8h | 37h | 64.1h | /Users/justin1064h* |
-| Interactive human attention | 0.5h | 0.7h | 2.6h | 300.6h |
-| Interactive AI generation | 2.8h | 3.1h | 4.0h | 275.7h |
+| Screen time (Mac) | 2.5h | 38.7h | 66.6h | /Users/justin1057h* |
+| Interactive human attention | 0.0h | 0.7h | 2.6h | 300.6h |
+| Interactive AI generation | 0.0h | 3.0h | 4.0h | 275.7h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 8.3h |
-| Worker/headless AI generation | 0.4h | 7.7h | 34.9h | 346.8h |
-| Additive observed work | 3.8h | 11.5h | 41.5h | 929.7h |
-| Interactive sessions | 2 | 6 | 13 | 921 |
-| Worker sessions | 26 | 186 | 788 | 4,195 |
+| Worker/headless AI generation | 1.3h | 7.0h | 36.2h | 348.1h |
+| Additive observed work | 1.3h | 10.7h | 42.8h | 931.0h |
+| Interactive sessions | 0 | 5 | 13 | 921 |
+| Worker sessions | 18 | 140 | 768 | 4,195 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -30,20 +30,20 @@ _Periods are completed local calendar days ending at midnight; today is excluded
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 159 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 160 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-sol | 7,136 | 24.6M | 1.0M | 279.4M | $313.97 | $754.39 | $695.89 |
-| gpt-5.5 | 1,629 | 4.4M | 213K | 41.1M | $25.98 | $111.05 | $115.90 |
+| gpt-5.5 | 1,592 | 4.3M | 207K | 40.2M | $25.28 | $108.80 | $112.77 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **8,789** | **29.2M** | **1.3M** | **321.0M** | **$340.53** | **$865.44** | **$814.56** |
+| **Total** | **8,752** | **29.0M** | **1.2M** | **320.1M** | **$339.83** | **$863.19** | **$811.43** |
 
-_351.5M total tokens processed. 91.3% cache hit rate._
+_350.5M total tokens processed. 91.3% cache hit rate._
 
-_$1,679.99 total saved ($865.44 caching + $814.56 model routing vs all-Opus)._
+_$1,674.61 total saved ($863.19 caching + $811.43 model routing vs all-Opus)._
 
 _Model savings are modest because ~91.3% of tokens are cache reads, where price differences between models are small._
 
@@ -89,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-29 05:23 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-29 07:25 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
