@@ -37,9 +37,9 @@ _AI session 365-day totals cover 161 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-sol | 7,228 | 24.9M | 1.0M | 281.7M | $317.27 | $760.70 | $703.04 |
-| gpt-5.5 | 1,300 | 3.3M | 171K | 33.2M | $20.45 | $89.74 | $90.90 |
+| gpt-5.5 | 1,299 | 3.3M | 171K | 33.2M | $20.45 | $89.74 | $90.90 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **8,552** | **28.4M** | **1.2M** | **315.4M** | **$338.30** | **$850.44** | **$796.70** |
+| **Total** | **8,551** | **28.4M** | **1.2M** | **315.4M** | **$338.30** | **$850.44** | **$796.70** |
 
 _345.1M total tokens processed. 91.4% cache hit rate._
 
@@ -89,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-30 12:47 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-30 13:47 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
