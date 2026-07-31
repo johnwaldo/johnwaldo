@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 1.0h | 5.8h | 37.2h | 349.1h |
 | Additive observed work | 1.0h | 9.4h | 43.8h | 932.1h |
 | Interactive sessions | 2 | 6 | 15 | 923 |
-| Worker sessions | 33 | 120 | 763 | 4,230 |
+| Worker sessions | 34 | 121 | 764 | 4,231 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -37,9 +37,9 @@ _AI session 365-day totals cover 162 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-sol | 7,720 | 26.8M | 1.1M | 311.7M | $346.65 | $841.81 | $768.57 |
-| gpt-5.5 | 1,277 | 3.3M | 171K | 33.2M | $20.45 | $89.74 | $90.90 |
+| gpt-5.5 | 1,276 | 3.3M | 171K | 33.2M | $20.45 | $89.74 | $90.90 |
 | big-pickle | 24 | 112K | 4K | 472K | $0.58 | $0.00 | $2.76 |
-| **Total** | **9,021** | **30.3M** | **1.3M** | **345.4M** | **$367.68** | **$931.54** | **$862.24** |
+| **Total** | **9,020** | **30.3M** | **1.3M** | **345.4M** | **$367.68** | **$931.54** | **$862.24** |
 
 _377.2M total tokens processed. 91.6% cache hit rate._
 
@@ -89,5 +89,5 @@ _Model savings are modest because ~94.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-31 18:20 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-31 19:21 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
